@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
 
     private int _currentBlockIndex = 0;
     
-    void Update()
+    private void Update()
     {
         if (Input.GetAxis(MouseWheelAxis) != 0)
         {
