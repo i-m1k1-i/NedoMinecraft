@@ -5,7 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Cactus : MonoBehaviour
 {
-    private int _damage = 10;
+    [SerializeField] private int _damage = 10;
+    [SerializeField] private float _damageDelay = 0.5f;
+
+    private float _elapsedTime;
 
     private void Start()
     {
@@ -13,12 +16,16 @@ public class Cactus : MonoBehaviour
         collider.isTrigger = false;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
-        Debug.Log("Touched");
         if (collision.transform.TryGetComponent<Health>(out Health health))
         {
-            health.TakeDamage(_damage);
+            _elapsedTime += Time.deltaTime;
+            if (_elapsedTime >= _damageDelay)
+            { 
+                health.TakeDamage(_damage);
+                _elapsedTime = 0f;
+            }
         }
     }
 }

@@ -8,18 +8,25 @@ public class Builder : MonoBehaviour
     [SerializeField] private Inventory _inventory;
 
     private GameObject _blockPrefab;
-
     private RaycastHit _hitInfo;
     private Vector3 BuildPosition => _hitInfo.transform.position + _hitInfo.normal;
-    private bool _previewEnabled = true;
+    private bool _previewEnabled = true, _canBuild;
+
+    private PlayerController _controller;
 
     private void Start()
     {
         _blockPrefab = _inventory.GetCurrentBlock();
+        _controller = GetComponent<PlayerController>();
     }
 
     private void Update()
     {
+        if (_canBuild == false)
+        {
+            return;
+        }
+
         if (_hitInfo.transform == null || _hitInfo.transform.GetComponent<Block>() == null)
         {
             return;
@@ -86,13 +93,20 @@ public class Builder : MonoBehaviour
         _blockPrefab = blockPrefab;
     }
 
+    private void SwitchCanBuild()
+    {
+        _canBuild = !_canBuild;
+    }
+
     private void OnEnable()
     {
         _inventory.CurrentBlockChanged += SetCurrentBlock;
+        _controller.PlayerDead += SwitchCanBuild;
     }
 
     private void OnDisable()
     {
         _inventory.CurrentBlockChanged -= SetCurrentBlock;
+        _controller.PlayerDead -= SwitchCanBuild;
     }
 }

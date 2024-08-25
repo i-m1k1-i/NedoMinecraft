@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class PlayerController : MonoBehaviour
 {
     public event UnityAction PlayerRevived;
+    public event UnityAction PlayerDead;
 
     [SerializeField] GameObject _revivePopUp;
     [SerializeField] Transform _camera;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private Health _health;
     private PlayerMovement _movement;
+    private PlayerController _controller;
 
     private bool _isDead = false;
     public bool IsDead => _isDead;
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
         _revivePopUp.SetActive(false);
         _health = GetComponent<Health>();
         _movement = GetComponent<PlayerMovement>();
+        _controller = GetComponent<PlayerController>();
     }
  
     private void OnEnable()
@@ -39,26 +42,24 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
+        _isDead = true;
         _movement.enabled = false;
-
+        _revivePopUp.SetActive(true);
         Cursor.lockState = CursorLockMode.Confined;
 
-        _revivePopUp.SetActive(true);
-
-        _isDead = true;
+        PlayerDead?.Invoke();
     }
 
     public void Revive()
     {
+        _isDead = false;
+        _movement.enabled = true;
+        _movement.ResetRotationValues();
+        _revivePopUp.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+
         Vector3 revivePosition = Vector3.zero + transform.up;
         transform.position = revivePosition;
-        _movement.enabled = true;
-        _movement.SetRotationToStartValues();
-
-        Cursor.lockState = CursorLockMode.Locked;
-        _revivePopUp.SetActive(false);
-
-        _isDead = false;
 
         PlayerRevived?.Invoke();
     }

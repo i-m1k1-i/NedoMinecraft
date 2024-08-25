@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void SetRotationToStartValues()
+    public void ResetRotationValues()
     {
         _rotationAroundX = 0f;
         transform.Rotate(Vector3.zero);
