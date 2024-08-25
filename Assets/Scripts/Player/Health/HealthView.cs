@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class HealthView : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _healthText;

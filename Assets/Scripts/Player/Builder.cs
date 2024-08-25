@@ -10,14 +10,18 @@ public class Builder : MonoBehaviour
     private GameObject _blockPrefab;
     private RaycastHit _hitInfo;
     private Vector3 BuildPosition => _hitInfo.transform.position + _hitInfo.normal;
-    private bool _previewEnabled = true, _canBuild;
+    private bool _previewEnabled = true, _canBuild = true;
 
     private PlayerController _controller;
+
+    private void Awake()
+    {
+        _controller = transform.parent.GetComponent<PlayerController>();
+    }
 
     private void Start()
     {
         _blockPrefab = _inventory.GetCurrentBlock();
-        _controller = GetComponent<PlayerController>();
     }
 
     private void Update()
