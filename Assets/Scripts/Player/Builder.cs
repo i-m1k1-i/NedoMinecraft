@@ -71,7 +71,9 @@ public class Builder : MonoBehaviour
 
     private void Build()
     {
-        Instantiate(_blockPrefab, BuildPosition, Quaternion.identity);
+        Block block = _blockPrefab.GetComponent<Block>();
+        Vector3 positon = BuildPosition + block.Offset;
+        Instantiate(_blockPrefab, positon, Quaternion.identity);
     }
 
     private void DestroyBlock()
@@ -97,20 +99,22 @@ public class Builder : MonoBehaviour
         _blockPrefab = blockPrefab;
     }
 
-    private void SwitchCanBuild()
+    private void SetCanBuild(bool can)
     {
-        _canBuild = !_canBuild;
+        _canBuild = can;
     }
 
     private void OnEnable()
     {
         _inventory.CurrentBlockChanged += SetCurrentBlock;
-        _controller.PlayerDead += SwitchCanBuild;
+        _controller.PlayerRevived += () => SetCanBuild(true);
+        _controller.PlayerDead += () => SetCanBuild(false);
     }
 
     private void OnDisable()
     {
         _inventory.CurrentBlockChanged -= SetCurrentBlock;
-        _controller.PlayerDead -= SwitchCanBuild;
+        _controller.PlayerRevived += () => SetCanBuild(true);
+        _controller.PlayerDead -= () => SetCanBuild(false);
     }
 }

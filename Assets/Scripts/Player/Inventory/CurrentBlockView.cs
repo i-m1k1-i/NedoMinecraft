@@ -6,8 +6,8 @@ public class CurrentBlockView : MonoBehaviour
 
     private Inventory _inventory;
     private GameObject _block;
-    private Vector3 _position = new Vector3(0f, 0f, 1.8f);
-    private Vector3 _scale = new Vector3(1f, 1f, 1f);
+    private Vector3 _position = new (0f, 0f, 1.8f);
+    private Vector3 _scale = new (1f, 1f, 1f);
 
     private void Awake()
     {

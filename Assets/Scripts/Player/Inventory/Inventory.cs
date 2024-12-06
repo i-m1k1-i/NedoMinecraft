@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     const string MouseWheelAxis = "Mouse ScrollWheel";
 
     private int _currentBlockIndex = 0;
-    
+
     private void Update()
     {
         if (Input.GetAxis(MouseWheelAxis) != 0)
@@ -21,7 +21,12 @@ public class Inventory : MonoBehaviour
 
     private void ChangeCurrentBlock()
     {
-        _currentBlockIndex = Mathf.Abs(_currentBlockIndex - 1);
+        int lastBlockIndex = _blockPrefabs.Length - 1;
+        _currentBlockIndex++;
+        if (_currentBlockIndex > lastBlockIndex)
+        {
+            _currentBlockIndex = 0;
+        }
         CurrentBlockChanged?.Invoke(_blockPrefabs[_currentBlockIndex]);
     }
 

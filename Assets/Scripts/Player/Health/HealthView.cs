@@ -1,11 +1,12 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Health))]
 public class HealthView : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI _healthText;
+    [SerializeField] private Slider _healthBar;
 
     private Health _health;
 
@@ -18,22 +19,10 @@ public class HealthView : MonoBehaviour
         _currentViewHealth = 100;
     }
 
-    private void OnEnable()
-    {
-        _health.Damaged += TakeDamage;
-        _health.HealthSetted += SetHealth;
-    }
-
-    private void OnDisable()
-    {
-        _health.Damaged -= TakeDamage;
-        _health.HealthSetted -= SetHealth;
-    }
-
     private void SetHealth(float health)
     {     
         _currentViewHealth = health;
-        _healthText.text = health.ToString();
+        _healthBar.value = health;
     }
 
     private void TakeDamage(float currentHealth)
@@ -51,9 +40,21 @@ public class HealthView : MonoBehaviour
 
             Debug.Log(_currentViewHealth);
             _currentViewHealth = (int)Mathf.Lerp(_currentViewHealth, target, 0.1f);
-            _healthText.text = _currentViewHealth.ToString();
+            _healthBar.value = _currentViewHealth;
 
             yield return wait;
         }
+    }
+
+    private void OnEnable()
+    {
+        _health.Damaged += TakeDamage;
+        _health.HealthSetted += SetHealth;
+    }
+
+    private void OnDisable()
+    {
+        _health.Damaged -= TakeDamage;
+        _health.HealthSetted -= SetHealth;
     }
 }

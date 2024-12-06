@@ -36,10 +36,12 @@ public class Health : MonoBehaviour
     {
         _currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
         Damaged?.Invoke(_currentHealth);
+        Debug.Log(_currentHealth);
 
         if (_currentHealth == 0)
         {
             HPRunOut?.Invoke();
+            Debug.Log("Died");
         }
     }
 
