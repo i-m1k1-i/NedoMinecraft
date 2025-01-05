@@ -7,7 +7,7 @@ public class Builder : MonoBehaviour
     [SerializeField] private BuildPreview _buildPreview;
     [SerializeField] private Inventory _inventory;
 
-    private GameObject _blockPrefab;
+    private Block _block;
     private RaycastHit _hitInfo;
     private Vector3 BuildPosition => _hitInfo.transform.position + _hitInfo.normal;
     private bool _previewEnabled = true, _canBuild = true;
@@ -21,7 +21,7 @@ public class Builder : MonoBehaviour
 
     private void Start()
     {
-        _blockPrefab = _inventory.GetCurrentBlock();
+        _block = _inventory.GetCurrentBlock();
     }
 
     private void Update()
@@ -71,9 +71,8 @@ public class Builder : MonoBehaviour
 
     private void Build()
     {
-        Block block = _blockPrefab.GetComponent<Block>();
-        Vector3 positon = BuildPosition + block.Offset;
-        Instantiate(_blockPrefab, positon, Quaternion.identity);
+        Vector3 positon = BuildPosition + _block.Offset;
+        Instantiate(_block, positon, Quaternion.identity);
     }
 
     private void DestroyBlock()
@@ -94,9 +93,9 @@ public class Builder : MonoBehaviour
         }
     }
 
-    private void SetCurrentBlock(GameObject blockPrefab)
+    private void SetCurrentBlock(Block block)
     {
-        _blockPrefab = blockPrefab;
+        _block = block;
     }
 
     private void SetCanBuild(bool can)

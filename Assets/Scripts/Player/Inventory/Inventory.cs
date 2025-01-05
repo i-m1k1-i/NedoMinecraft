@@ -3,9 +3,9 @@ using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
-    public event UnityAction<GameObject> CurrentBlockChanged;
+    public event UnityAction<Block> CurrentBlockChanged;
 
-    [SerializeField] private GameObject[] _blockPrefabs;
+    [SerializeField] private Block[] _blocks;
 
     const string MouseWheelAxis = "Mouse ScrollWheel";
 
@@ -21,17 +21,17 @@ public class Inventory : MonoBehaviour
 
     private void ChangeCurrentBlock()
     {
-        int lastBlockIndex = _blockPrefabs.Length - 1;
+        int lastBlockIndex = _blocks.Length - 1;
         _currentBlockIndex++;
         if (_currentBlockIndex > lastBlockIndex)
         {
             _currentBlockIndex = 0;
         }
-        CurrentBlockChanged?.Invoke(_blockPrefabs[_currentBlockIndex]);
+        CurrentBlockChanged?.Invoke(_blocks[_currentBlockIndex]);
     }
 
-    public GameObject GetCurrentBlock()
+    public Block GetCurrentBlock()
     {
-        return _blockPrefabs[_currentBlockIndex];
+        return _blocks[_currentBlockIndex];
     }
 }

@@ -22,14 +22,15 @@ public class CurrentBlockView : MonoBehaviour
 
     private void SetBlock(Block block)
     {
+        Debug.Log(block);
         _block = Instantiate(block, _renderCamera);
         _block.transform.localPosition = _position;
         _block.transform.localScale = _scale;
     }
 
-    private void ChangeBlock(GameObject block)
+    private void ChangeBlock(Block block)
     {
-        Destroy(_block);
+        _block.Destroy();
         SetBlock(block);
     }
 
