@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\UnityProjects\\NedoMinecraft\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\scripts\\player\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\scripts\\blocks\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\blocks\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\scripts\\player\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\builder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\usedonlyforlearn\\atributelearner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\usedonlyforlearn\\atributelearner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Inventory.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Inventory\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Inventory\\Inventory.cs",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Block.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Blocks\\Block.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Blocks\\Block.cs",
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CurrentBlockView.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Inventory\\CurrentBlockView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Inventory\\CurrentBlockView.cs",
@@ -85,13 +85,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Builder.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Builder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Builder.cs",
               "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Builder.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Builder.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwBcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAowGQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T02:32:29.409Z",
               "EditorCaption": ""
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InventoryItem.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Inventory\\InventoryItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Inventory\\InventoryItem.cs",
