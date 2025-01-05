@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "E:\\UnityProjects\\NedoMinecraft\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Health\\Health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Player\\Health\\Health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Game\\DeathZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Game\\DeathZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|e:\\unityprojects\\nedominecraft\\assets\\scripts\\player\\basics\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\basics\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|e:\\unityprojects\\nedominecraft\\assets\\scripts\\blocks\\cactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\blocks\\cactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\scripts\\blocks\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\blocks\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|e:\\unityprojects\\nedominecraft\\assets\\revivebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\revivebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Blocks\\Cactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Blocks\\Cactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\scripts\\player\\inventory\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,16 +55,16 @@
       "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chest\\ichest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\scripts\\blocks\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\blocks\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Health\\Health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Player\\Health\\Health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Health\\HealthView.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Player\\Health\\HealthView.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Game\\DeathZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Game\\DeathZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2184709C-23D7-EF45-2596-37663A311D93}|Assembly-CSharp.csproj|E:\\UnityProjects\\NedoMinecraft\\assets\\usedonlyforlearn\\atributelearner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +90,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "ReviveButton.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\ReviveButton.cs",
+              "RelativeDocumentMoniker": "Assets\\ReviveButton.cs",
+              "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\ReviveButton.cs",
+              "RelativeToolTip": "Assets\\ReviveButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:01:01.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Basics\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Basics\\PlayerController.cs",
+              "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Basics\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Basics\\PlayerController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T15:41:31.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Chest.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Chest\\Chest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\Chest.cs",
@@ -94,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ChestOpenZone.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Chest\\ChestOpenZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\ChestOpenZone.cs",
@@ -106,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ChestInterface.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Chest\\ChestInterface.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\ChestInterface.cs",
@@ -118,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "IChest.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Chest\\IChest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Chest\\IChest.cs",
@@ -130,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "Block.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Blocks\\Block.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Blocks\\Block.cs",
@@ -138,19 +172,21 @@
               "RelativeToolTip": "Assets\\Scripts\\Blocks\\Block.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T01:42:49.299Z"
+              "WhenOpened": "2024-12-04T01:42:49.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "Health.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Health\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Health\\Health.cs",
               "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Health\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Health\\Health.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwCwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T13:13:14.06Z"
+              "WhenOpened": "2024-12-03T13:13:14.06Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -166,33 +202,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "DeathZone.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Game\\DeathZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\DeathZone.cs",
               "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Game\\DeathZone.cs",
               "RelativeToolTip": "Assets\\Scripts\\Game\\DeathZone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:54:12.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-25T17:54:12.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs",
               "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Basics\\PlayerMovement.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwEUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwDoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:25:24.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-25T17:25:24.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Inventory.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Inventory\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Inventory\\Inventory.cs",
@@ -204,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CurrentBlockView.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Inventory\\CurrentBlockView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Inventory\\CurrentBlockView.cs",
@@ -216,20 +250,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Cactus.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Blocks\\Cactus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Blocks\\Cactus.cs",
               "ToolTip": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Blocks\\Cactus.cs",
               "RelativeToolTip": "Assets\\Scripts\\Blocks\\Cactus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T10:37:27.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-18T10:37:27.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Builder.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Builder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Builder.cs",
@@ -241,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "AtributeLearner.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\UsedOnlyForLearn\\AtributeLearner.cs",
               "RelativeDocumentMoniker": "Assets\\UsedOnlyForLearn\\AtributeLearner.cs",
@@ -253,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "InventoryItem.cs",
               "DocumentMoniker": "E:\\UnityProjects\\NedoMinecraft\\Assets\\Scripts\\Player\\Inventory\\InventoryItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Inventory\\InventoryItem.cs",

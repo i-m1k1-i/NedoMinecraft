@@ -5,8 +5,8 @@ public class CurrentBlockView : MonoBehaviour
     [SerializeField] Transform _renderCamera;
 
     private Inventory _inventory;
-    private GameObject _block;
-    private Vector3 _position = new (0f, 0f, 1.8f);
+    private Block _block;
+    private Vector3 _position = new (0f, 0f, 1f);
     private Vector3 _scale = new (1f, 1f, 1f);
 
     private void Awake()
@@ -16,16 +16,17 @@ public class CurrentBlockView : MonoBehaviour
 
     private void Start()
     {
-        GameObject block = _inventory.GetCurrentBlock();
+        Block block = _inventory.GetCurrentBlock();
         SetBlock(block);
     }
 
-    private void SetBlock(GameObject block)
+    private void SetBlock(Block block)
     {
         _block = Instantiate(block, _renderCamera);
         _block.transform.localPosition = _position;
         _block.transform.localScale = _scale;
     }
+
     private void ChangeBlock(GameObject block)
     {
         Destroy(_block);

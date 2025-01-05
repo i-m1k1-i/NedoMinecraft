@@ -426,7 +426,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83496653
 MonoBehaviour:
@@ -475,10 +475,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
+  m_fontSize: 35.8
   m_fontSizeBase: 22
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f96742eae3bc051419b1846c5f3e3480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _revivePopUp: {fileID: 1087358328}
+  _deathCanvas: {fileID: 1349977523}
   _camera: {fileID: 963194228}
   _deathZone: {fileID: 867449667}
 --- !u!114 &131864913
@@ -3025,8 +3025,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0.8131057, b: 0.6179246, a: 1}
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4143,6 +4143,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4225,6 +4226,15 @@ Transform:
   - {fileID: 163329201}
   m_Father: {fileID: 131864904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &963194229
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 44d0573bf6d91e447b62f3aff840f2ae, type: 2}
 --- !u!4 &978950115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 764756752353143186, guid: 0e2daaa932cbb90459455d4e00c062b3, type: 3}
@@ -5241,7 +5251,7 @@ GameObject:
   - component: {fileID: 1228651258}
   - component: {fileID: 1228651257}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CrosshairCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5276,12 +5286,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 2
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -5308,7 +5318,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1228651260
 RectTransform:
@@ -5761,7 +5771,7 @@ GameObject:
   - component: {fileID: 1333289046}
   - component: {fileID: 1333289045}
   m_Layer: 5
-  m_Name: ReviveText
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6336,7 +6346,7 @@ GameObject:
   - component: {fileID: 1419909054}
   - component: {fileID: 1419909053}
   m_Layer: 5
-  m_Name: MiniInventoryCanvas
+  m_Name: FastInventoryCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7572,6 +7582,7 @@ GameObject:
   - component: {fileID: 1860387288}
   - component: {fileID: 1860387287}
   - component: {fileID: 1860387286}
+  - component: {fileID: 1860387289}
   m_Layer: 5
   m_Name: ReviveButton
   m_TagString: Untagged
@@ -7642,19 +7653,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1860387287}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 131864912}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Revive
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Revive
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1860387287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7693,6 +7692,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860387284}
   m_CullTransparentMesh: 1
+--- !u!114 &1860387289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860387284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b4aa47cdfe99347bb7db01dce8aa8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1860809579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9156,6 +9167,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: orthographic size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 24081333308401795, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.7169812
+      objectReference: {fileID: 0}
     - target: {fileID: 935348781263135551, guid: 65ef0ce4e6ba8a340ad7bdeab49721af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9212,13 +9251,13 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 131864904}
   - {fileID: 2083946434}
-  - {fileID: 1228651260}
-  - {fileID: 1419909056}
   - {fileID: 1726729576}
   - {fileID: 980234427}
   - {fileID: 867449668}
   - {fileID: 7236982597653590078}
   - {fileID: 9151164180008422177}
-  - {fileID: 1475029552}
   - {fileID: 862228260}
   - {fileID: 1349977524}
+  - {fileID: 1475029552}
+  - {fileID: 1419909056}
+  - {fileID: 1228651260}

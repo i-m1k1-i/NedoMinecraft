@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     public event UnityAction<float> Damaged;
     public event UnityAction<float> HealthSetted;
-    public event UnityAction HPRunOut;
+    public event UnityAction HPRanOut;
 
     [SerializeField] private int _maxHealth = 100;
 
@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
 
         if (_currentHealth == 0)
         {
-            HPRunOut?.Invoke();
+            HPRanOut?.Invoke();
             Debug.Log("Died");
         }
     }
